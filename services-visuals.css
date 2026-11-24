@@ -1,0 +1,20 @@
+/* Mise en page réservée à la page Nos services */
+.service-detail{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,76px);padding-block:64px;align-items:start}
+.service-detail .detail-title{position:sticky;top:126px;align-self:start;min-width:0}
+.service-detail .detail-title>.icon-box{display:none}
+.service-detail .detail-title>.eyebrow{margin-bottom:15px;color:#64516e;font-size:14px}
+.service-detail .detail-title>h2{font-size:clamp(29px,3vw,40px);line-height:1.15;letter-spacing:-1px;margin-bottom:26px;max-width:550px}
+.service-detail:nth-of-type(2n){background:none;margin-inline:0;padding-inline:0}
+.service-detail:nth-of-type(2n)>.detail-title{grid-column:2;grid-row:1}
+.service-detail:nth-of-type(2n)>div:not(.detail-title){grid-column:1;grid-row:1}
+.service-visual{margin:0;border:1px solid #e3deea;border-radius:8px;overflow:hidden;background:#f0edf4}
+.service-visual img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;transition:transform .35s ease}
+.service-visual figcaption{position:relative;padding:13px 18px;background:#f6f4f8;color:#5e5268;font-size:14px;line-height:1.5;border-top:1px solid #e3deea}
+.service-detail .check-list{gap:12px;margin-top:20px;margin-bottom:25px}
+.service-detail .check-list li{font-size:16px;line-height:1.65}
+.service-detail .service-context{padding-top:24px;margin-top:28px}
+.service-detail .info{margin-block:26px}
+.service-detail .button{font-size:16px;min-height:48px;padding:14px 20px}
+@media(max-width:900px){.service-detail{gap:32px}.service-detail .detail-title{top:115px}.service-detail .detail-title>h2{font-size:30px}}
+@media(max-width:700px){.service-detail{grid-template-columns:1fr;gap:27px;padding-block:42px}.service-detail .detail-title{position:static}.service-detail:nth-of-type(2n)>.detail-title,.service-detail:nth-of-type(2n)>div:not(.detail-title){grid-column:auto;grid-row:auto}.service-detail .detail-title>h2{font-size:31px;max-width:100%;margin-bottom:22px}.service-detail .button{width:100%}.service-visual figcaption{padding:12px 15px}.service-detail .service-context{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){.service-visual img{transition:none}}
